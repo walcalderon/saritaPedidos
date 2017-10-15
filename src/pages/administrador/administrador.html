@@ -1,0 +1,113 @@
+<!--
+  Generated template for the AdministradorPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Helados Sarita</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content style="min-height:400px; background-image: url('assets/fondo2.png')">
+    <!-- <button ion-button color="primary" (click)="agregarCliente()">Nuevo Cliente</button>-->
+ <div id="estado" style="color:white " class="menu">{{estadoRed}}</div>   
+  <ion-grid>
+      <ion-row>
+        <ion-col col-4 style="color:white ">
+          
+          <div class="menu" >
+          <a (click)="this.cargarDatosClientes()" style="color: white">
+            <img src="assets/actualizar_clientes.png" width="80%">
+            Actualizar Clientes
+            
+          </a>
+          </div>
+        </ion-col>
+        <ion-col col-4 style="color:white ">
+            <div class="menu" >
+                <a (click)="this.cargarDatosArticulos()" style="color: white">
+                    <img src="assets/Actualizar_articulos.png" width="80%">
+                    Actualizar Productos
+                   
+                  </a>
+          
+            </div>
+        </ion-col>
+        <ion-col col-4 style="color:white ">
+            <div class="menu" >
+                <a (click)="this.cargarDatosListado()" style="color: white">
+                    <img src="assets/Actualizar_Precios.png" width="80%">
+                    Actualizar Precios
+                  </a>
+             </div>
+         </ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col col-4 style="color:white ">
+              <div class="menu" >
+                  <a (click)="this.cargarDatosRutas()" style="color: white">
+                      <img src="assets/Actualizar_Rutas.png" width="80%">
+                      Actualizar Rutas[]
+                    </a>
+               </div>
+                  
+            
+          </ion-col>
+          <ion-col col-4 style="color:white ">
+              <div class="menu" >
+                  <a (click)="this.hacerPedidos()" style="color: white">
+                      <img src="assets/crear_pedido.png" width="80%">
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      PEDIDOS
+                    </a>
+               </div>
+            </ion-col>
+            <ion-col col-4 style="color:white ">
+              <div class="menu" >
+                  <a (click)="this.cargarPreciosEspeciales()" style="color: white">
+                      <img src="assets/im02.png" width="80%">
+                      Precios Especiales
+                    </a>
+               </div>
+<!-- -->
+<div class="menu" >
+  <a (click)="this.obtenerVentas()" style="color: white">
+      <img src="assets/im02.png" width="80%">
+      probar Envio
+    </a>
+</div>
+<!-- -->
+          </ion-col>
+      </ion-row>
+    </ion-grid>
+
+
+
+
+<!--
+  <ion-list>
+    <ion-item-sliding *ngFor="let cliente of listadoClientes; let i = index">    obtenerVentas()
+     <ion-item >
+       <ion-label>{{ cliente.id_clientes }} | {{ cliente.nombre_cliente }}</ion-label>
+       <ion-label>{{ cliente.grupo_clientes }}*</ion-label>
+       <ion-checkbox (ionChange)="updateTask( user, i )" [checked]="listadoClientes.id_cliente"></ion-checkbox>
+     </ion-item>
+     <ion-item-options side="right" icon-left>
+       <button ion-button color="danger" (click)="deleteTask(task, i)">
+         <ion-icon name="trash"></ion-icon>
+         Delete AUN NO en clientes
+       </button>
+     </ion-item-options>
+   </ion-item-sliding>
+ </ion-list>
+-->
+<div class="men01">
+<img  *ngIf="cargando==1" src="assets/loader.gif" /><br />
+{{clientesListNum}}<br />
+{{precios}}<br />
+</div>
+
+</ion-content>

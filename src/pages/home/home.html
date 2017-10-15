@@ -1,0 +1,22 @@
+ 
+  <ion-content  style="height:400px; background-image: url('assets/fondo.png')"> 
+    <br /><br /><br /><br /><br /> <br /><br />
+      <ion-card style="background-color:none">
+          <ion-list>                   
+              <ion-item>
+                  <ion-label floating>Usuario</ion-label>
+                  <ion-input type="text" [(ngModel)]="usuario"></ion-input>
+                </ion-item>
+              
+                <ion-item>
+                  <ion-label floating>Contraseña</ion-label>
+                  <ion-input type="password" [(ngModel)]="clave"></ion-input>
+                </ion-item>
+              
+              </ion-list>
+              <button ion-button color="secondary" block (click)="verificarLogin()">Iniciar sesión</button>
+              <div id="mensaje" style="background-color:red; color:white">{{mensaje}}</div>
+              <!--<button ion-button color="primary" (click)="nuevoRegistro()">Nuevo usuario</button>  
+              <button ion-button color="primary" (click)="administrador()">Opciones.</button>      -->
+      </ion-card>
+    </ion-content>
