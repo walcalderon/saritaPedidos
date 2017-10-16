@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\desa_movil\sqliteCopia\platforms\android\build\intermediates\exploded-aar\org.apache.cordova\CordovaLib\6.2.3\debug\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="7a1530ac850543228ac856fe951d258efe29f918">
+        <dex dex="C:\desa_movil\sqliteCopia\platforms\android\build\intermediates\pre-dexed\debug\CordovaLib-6.2.3-debug_72428e8a3ba776e80047c1164af7aaa05540cb90.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\desa_movil\sqliteCopia\platforms\android\libs\sqlite-connector.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="76169ab23a4f939925491c6fe186749da5a56ee9">
+        <dex dex="C:\desa_movil\sqliteCopia\platforms\android\build\intermediates\pre-dexed\debug\sqlite-connector_6b743a289dc826699c400475befedce696df7b43.jar" />
+    </item>
+
+</items>
